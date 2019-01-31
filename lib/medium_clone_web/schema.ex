@@ -1,13 +1,13 @@
 defmodule MediumCloneWeb.Schema do
-    use Absinthe.Schema
+  use Absinthe.Schema
 
-  # import Types
+  import_types(MediumCloneWeb.Schema.Types)
 
   query do
   end
 
-  mutation do   
-  end
+  # mutation do   
+  # end
 
 #   subscription do      
 #   end
