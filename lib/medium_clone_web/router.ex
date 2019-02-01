@@ -12,9 +12,8 @@ defmodule MediumCloneWeb.Router do
 
     forward("/graphql", Absinthe.Plug, schema: MediumCloneWeb.Schema)      
 
-    
     if Mix.env() == :dev do
-      forward("/graphiql", Absinthe.Plug.Graphiql, schema: MediumCloneWeb.Schema)      
+      forward("/graphiql", Absinthe.Plug.GraphiQL, schema: MediumCloneWeb.Schema)      
     end
 
   end

@@ -10,10 +10,18 @@ defmodule MediumCloneWeb.Schema.Types.UserType do
     end
 
     input_object :user_input_type do
-      field :first_name, non_null(:string)
-      field :last_name, non_null(:string)
-      field :email, non_null(:string)
-      field :password, non_null(:string)
-      field :password_confirmation, non_null(:string)
+      field(:first_name, non_null(:string))
+      field(:last_name, non_null(:string))
+      field(:email, non_null(:string))
+      field(:password, non_null(:string))
+      field(:password_confirmation, non_null(:string))
     end
+
+    # input_object :user_input_type do
+    #   field :first_name, non_null(:string)
+    #   field :last_name, non_null(:string)
+    #   field :email, non_null(:string)
+    #   field :password, non_null(:string)
+    #   field :password_confirmation, non_null(:string)
+    # end
 end

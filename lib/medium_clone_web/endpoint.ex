@@ -1,5 +1,6 @@
 defmodule MediumCloneWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :medium_clone
+  use Absinthe.Phoenix.Endpoint
 
   socket "/socket", MediumCloneWeb.UserSocket,
     websocket: true,
